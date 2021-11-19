@@ -1,0 +1,93 @@
+footer {
+  h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    letter-spacing: 0.5em;
+  }
+  h4 {
+    text-align: center;
+  }
+  h6 {
+    text-align: center;
+    word-spacing: 8px;
+  }
+  .contacto {
+    text-align: center;
+    position: relative;
+    padding: 30px 0px;
+  }
+  .envios {
+    text-align: center;
+    margin-top: 20px;
+    position: relative;
+  }
+  .redes {
+    display: inline-block;
+    margin-right: 20px;
+  }
+    .contet-footer{
+        h4{
+            color: #929292;
+            font-size: 22px;
+            font-family: "Poppins-SemiBold";
+            letter-spacing: 0px;
+            margin-top: 25px;
+            margin-bottom: 6px;
+        }
+        .footer-input{
+          margin-top: 20px;
+          display: flex;
+          justify-content: center;
+          width: 100%;
+          padding: 0 20%;
+            @media(max-width:991px){
+              padding: 0px;
+              justify-content: space-evenly;
+            }
+          .inputf{
+            width: 50%;
+            min-width: 50%;
+            input{
+              width: 100%;
+              
+            }
+          }
+         .buttonfooter{
+           width: 20%;
+           min-width: 20%;
+           button{
+             width: 100%;
+           }
+         }
+      }
+    }
+
+  
+
+  .container-veh{
+      display: flex;
+      justify-content: space-evenly;
+      margin-top: 20px;
+      p{
+        color: #929292;
+        font-size: 22px;
+        font-family: "Poppins-SemiBold";
+        letter-spacing: 0px;
+        margin-top: 25px;
+        margin-bottom: 6px;
+      }
+      .veh-cont{
+          text-align: center;
+          .camion:hover {
+            transform: translate(30px);
+          }
+          @media(max-width:991px){
+            p{
+              font-size: 15px;
+            }
+          }
+      }
+  }
+  background-color: #EEEE;
+}
+

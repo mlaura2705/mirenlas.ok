@@ -1,0 +1,41 @@
+
+    .logo{
+            text-align: center;
+            background-color:white;
+    }
+    .navbar{
+        background-color: $bg_violeta;
+        width: 90%;
+        // padding: 15px;
+        margin: 20px auto;
+        border-radius: 20px;
+        ul{
+            li{
+                a:hover{
+                    color: $bg_hover;
+                }
+            }
+        }
+
+    }
+
+h1{
+    color: $bg_violeta;
+    font-family: 'Fleur De Leah', cursiva;
+    text-align: center;
+    font-size: 4 rem;
+}
+
+
+@media only screen and (max-width:991px){
+    .logo{
+                a{
+                    img{
+                        width: 150px;
+                    }
+                }
+                h1{
+                    font-size:50px;
+                }
+            }
+}

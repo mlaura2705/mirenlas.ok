@@ -1,0 +1,67 @@
+@mixin estilo ($fontfamily,$fontsize,$margin,$text) {
+  font-family: $fontfamily;
+  font-size: $fontsize;
+  margin: $margin;
+  text-align: $text;
+}
+@mixin imagen ($width,$border,$opacity,$margin) {
+  width: $width;
+  border: $border;
+  opacity: $opacity;
+  margin: $margin; 
+}
+.indumentaria {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+    &_nombre{
+      @include estilo (Verdana,1rem, 1rem 0, center)
+    }
+    &_precio{
+      @include estilo (Verdana,1rem, 1rem 0, center)
+    }
+  .container-indu{
+    width: 15%;
+    margin: 20px;  
+    border-radius: 20px 20px 10px 10px;
+    box-shadow: 20px 10px 10px 0px #000;
+    transition: all 0.5s ease-out;
+    background-color:#EEEE;
+
+    img{
+      width: 100%;
+      border: none;
+      border-radius: 20px 20px 0px 0px;
+    }
+    .content-p{
+      text-align: center;
+      background-color: #EEEE;
+      width: 100%;
+      padding: 15%;
+      border-radius: 20px 20px 10px 10px;
+
+      p{
+        margin: 0px;
+      }
+    }
+  }
+  .container-indu:hover{
+    width: 15.2%;
+    box-shadow: 20px 20px 20px 0px #000;
+  }
+
+}
+
+@media only screen and (max-width:991px) {
+  .indumentaria{
+    flex-direction: column;
+    align-items: center;
+    .container-indu{
+      width: 70%;
+    }
+    .container-indu:hover{
+      width: 65%
+    }
+    
+  }
+}

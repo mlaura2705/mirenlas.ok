@@ -1,0 +1,75 @@
+@mixin estilo2 ($fontfamily,$fontsize,$margin,$text) {
+  font-family: $fontfamily;
+  font-size: $fontsize;
+  margin: $margin;
+  text-align: $text;
+}
+@mixin imagen2 ($width,$border,$opacity,$margin) {
+  width: $width;
+  border: $border;
+  opacity: $opacity;
+  margin: $margin; 
+}
+body {
+  header {
+    .contenedor-nav {
+      padding: 0px;
+    }
+  }
+  main  {
+    .calzado {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      &__nombre{
+        @include estilo2 (Verdana,1rem, 1rem 0, center)
+      }
+      &__precio {
+        @include estilo2 (Verdana,1rem,1rem 0 ,center)
+      }
+      .botinetasCalzado{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        .content-one{
+          width: 15%;
+          margin: 20px;  
+          border-radius: 20px 20px 10px 10px;
+          box-shadow: 20px 10px 10px 0px #000;
+          transition: all 0.5s ease-out;
+          background-color: #EEEE;
+          img{
+            width: 100%;
+            border: none;
+            border-radius: 20px 20px 0px 0px;
+          }
+          .content-parrafos{
+            text-align: center;
+            background-color: #EEEE;
+            width: 100%;
+            padding: 5%;
+            border-radius: 20px 20px 10px 10px;
+          }
+        }
+        .content-one:hover{
+          width: 15.2%;
+          box-shadow: 20px 20px 20px 0px #000;
+        }
+      }
+      
+    }
+  }
+  
+}
+@media only screen and (max-width:991px) {
+  .calzado{
+    flex-direction: column;
+    align-items: center;
+    .content-one{
+      width: 70% !important;
+    }
+    .content-one:hover{
+      width: 65%
+    }
+  }
+}
